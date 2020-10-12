@@ -44,25 +44,6 @@ class Task_2{
                 }
         System.out.println(Arrays.toString(arr));
     }
-    public int[] insertSort(int[] arr){
-        for (int left = 1; left < arr.length; left++) {
-            int value;
-            if(arr[left]%2!=0)
-                value = arr[left];
-            else continue;
-            int i = left - 1;
-            for (; i >= 0; i--) {
-                if (value < arr[i]) {
-                    arr[i + 1] = arr[i];
-                } else {
-                    break;
-                }
-            }
-            arr[i + 1] = value;
-        }
-        System.out.println(Arrays.toString(arr));
-        return arr;
-    }
 }
 
 
