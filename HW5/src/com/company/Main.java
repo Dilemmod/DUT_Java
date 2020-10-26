@@ -1,65 +1,154 @@
 package com.company;
+
+import java.io.IOException;
 import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
 
     public static void main(String[] args) {
-        //new Task_1(493193);
-        //new Task_2(359999);
-       // new Task_4(3,4);
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Input a string that contains mathematical operations:\n:");
+        String inputString = in.next();
+        new Task_1(inputString);
+         */
+        //new Task_2();
+        new Task_3();
     }
 }
-class Task_1<sum> {
-    Task_1(int n){
-        if(n>9) {
-            while(n>9){
-                System.out.println(n=sumOfDigitsOfN(n));
+
+class Task_1 {
+    Task_1(String inputString) {
+
+        String matOperStr = inputString;
+        //String matOperStr = "13+5+8-7*5/4";
+        int indexOfSymbol = indexOfSymbol(matOperStr);
+        double answer = Integer.parseInt(matOperStr.substring(0, indexOfSymbol));
+        String symbol;
+        while (indexOfSymbol != -1) {
+            symbol = matOperStr.substring(indexOfSymbol, indexOfSymbol + 1);
+            matOperStr = matOperStr.substring(indexOfSymbol + 1, matOperStr.length());
+            indexOfSymbol = indexOfSymbol(matOperStr);
+            if (indexOfSymbol != -1)
+                answer = calculator(answer, symbol, matOperStr.substring(0, indexOfSymbol));
+            else
+                answer = calculator(answer, symbol, matOperStr);
+            System.out.println(answer);
+        }
+        System.out.println("\n\nAnswer:\n" + inputString + " = " + answer);
+    }
+
+    int indexOfSymbol(String s) {
+        Pattern p = Pattern.compile("[+-/*]{1}");
+        Matcher m = p.matcher(s);
+        if (m.find()) {
+            return m.start();
+        }
+        return -1;
+    }
+
+    double calculator(double num1, String symbol, String strNumber2) {
+        double num2 = Double.parseDouble(strNumber2);
+        switch (symbol) {
+            case "+":
+                return (num1 + num2);
+            case "-":
+                return (num1 - num2);
+            case "*":
+                return (num1 * num2);
+            case "/":
+                return (num1 / num2);
+        }
+        return 0;
+    }
+}
+
+class Task_2 {
+    Task_2() {
+        Random rand = new Random();
+        int sizeArray = rand.nextInt(99);
+        System.out.println("Size array = " + sizeArray);
+        System.out.println(Arrays.toString(centerNumIncrease(sizeArray)));
+    }
+
+    int[] centerNumIncrease(int sizeArray) {
+        int[] array = new int[sizeArray];
+        if (sizeArray > 1) {
+            int centerID = sizeArray / 2, counter = 1;
+            array[centerID] = 0;
+            for (int minus = centerID - 1, plus = centerID + 1; ; minus--, plus++) {
+                array[minus] = counter;
+                if (sizeArray % 2 == 0 && counter == centerID) {
+                    break;
+                }
+                array[plus] = counter;
+                counter++;
+                if (counter > centerID) {
+                    break;
+                }
             }
-        }
-    }
-    public int sumOfDigitsOfN(int n){
-        int sum=0;
-        while (n>0){
-            sum+=n%10;
-            n/=10;
-        }
-        return sum;
-
-    }
-}
-class Task_2{
-    Task_2(int second) {
-        if (second > 0 || second <= 359999){
-            System.out.println(second / 3600 + ":" + second % 3600 / 60 + ":" + second % 3600 % 60);
-        }
-    }
-}
-class Task_3{
-    /*Imptement method hasNoneLeuers. Method
-returns true if none of the letters in the
-blacklist are present In the phrase . If at
-least one letter from blacklist is present in
-the phrase retufh false . Comparison
-should be case lnsensmve. Meaning ’A' =='a'*/
-
-
-}
-class Task_4{
-    Task_4(int x,int n){
-        System.out.println(Arrays.toString(findMultiples(x,n)));
-    }
-    int[] findMultiples(int x,int n){
-        int[] array=new int[x];
-        int t=n;
-        for(int i=0;i<array.length;i++){
-            array[i]=t;
-            t+=n;
         }
         return array;
     }
 }
-class Task_5{
-    /*Given an array of strings. reverse them
-and their order in such way that their
-length stays the same as the length of the
-original Inputs.*/
+
+class Task_3 {
+    String line ="Pol, Nika, Oleg,";
+    Task_3() {
+        menu();
+    }
+    void menu(){
+        String inputString = "0";
+        while (inputString != "3") {
+            Scanner in = new Scanner(System.in);
+            System.out.println(
+                    "Enter 1: for input a value\n" +
+                    "Enter 2: for display all entered words\n" +
+                    "Enter 3: for exit");
+            inputString = in.next();
+            switch(inputString){
+                case "1":
+                    inputValueInLine();
+                    break;
+                case"2":
+                    System.out.println("Your line:\n"+line);
+                    break;
+                case "3":
+                    inputString="3";
+                    break;
+                default:
+                    continue;
+            }
+        }
+
+    }
+    void inputValueInLine(){
+        Scanner in = new Scanner(System.in);
+        System.out.println(
+                "Enter a value in this format:\n" +
+                "If you need to add the word    \"+value\"\n" +
+                "If you need to delete the word \"-value\":");
+        String tempStr = in.next();
+        if(tempStr.startsWith("-")){
+            tempStr=tempStr.substring(1,tempStr.length());
+            line=line.replace(" "+tempStr+",","");
+            System.out.println("Value deleted ");
+
+        }else if(tempStr.startsWith("+")){
+            tempStr=tempStr.substring(1,tempStr.length());
+                //line+=tempStr+", ";
+            line =line.concat(" "+tempStr+", ");
+            System.out.println("Value added");
+
+        }else{
+            System.out.println("Entered data is in the wrong format");
+        }
+        menu();
+
+    }
+
 }
