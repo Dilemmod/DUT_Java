@@ -20,28 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b3146c8-62c8-42dd-beac-d5cb3daf3146" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/HW4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/out/production/HW4/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/out/production/HW4/com/company/Task_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/out/production/HW4/com/company/Task_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW4/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/HW5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/com/company/Task_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/com/company/Task_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/com/company/Task_3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW5/out/production/HW5/com/company/Task_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW4/com/company/Task_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW4/com/company/Task_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HW5/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW5/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,21 +95,25 @@
     </state>
     <state x="740" y="318" key="FileChooserDialogImpl/0.46.1920.1034@0.46.1920.1034" timestamp="1603626484675" />
     <state x="740" y="324" key="FileChooserDialogImpl/0.54.1920.1026@0.54.1920.1026" timestamp="1603728080198" />
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1602533968985">
-      <screen x="0" y="54" width="1920" height="1026" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1603783950163">
+      <screen x="0" y="46" width="1920" height="1034" />
     </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1603783950163" />
     <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.54.1920.1026@0.54.1920.1026" timestamp="1602533968985" />
-    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1602533968985">
-      <screen x="0" y="54" width="1920" height="1026" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1603783950162">
+      <screen x="0" y="46" width="1920" height="1034" />
     </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1603783950162" />
     <state width="1877" height="270" key="GridCell.Tab.0.center/0.54.1920.1026@0.54.1920.1026" timestamp="1602533968985" />
-    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1602533968985">
-      <screen x="0" y="54" width="1920" height="1026" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1603783950162">
+      <screen x="0" y="46" width="1920" height="1034" />
     </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1603783950162" />
     <state width="1877" height="270" key="GridCell.Tab.0.left/0.54.1920.1026@0.54.1920.1026" timestamp="1602533968985" />
-    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1602533968985">
-      <screen x="0" y="54" width="1920" height="1026" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1603783950162">
+      <screen x="0" y="46" width="1920" height="1034" />
     </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1603783950162" />
     <state width="1877" height="270" key="GridCell.Tab.0.right/0.54.1920.1026@0.54.1920.1026" timestamp="1602533968985" />
     <state x="552" y="296" key="Vcs.Push.Dialog.v2" timestamp="1602507364961">
       <screen x="0" y="54" width="1920" height="1026" />

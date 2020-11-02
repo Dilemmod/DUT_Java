@@ -16,7 +16,7 @@ public class Main {
         String inputString = in.next();
         new Task_1(inputString);
          */
-        //new Task_2();
+        new Task_2();
         new Task_3();
     }
 }
